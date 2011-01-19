@@ -1,0 +1,22 @@
+README: dd. 19.01.2010
+
+attention:
+----------
+this Source-Code was compile with older libfreenects-lib.
+its possible you have compiler-errors, if you use the newest release of libfreenect.
+
+requirements:
+-------------
+linux ubuntu-10.10 
+opencv-2.0.0 install and running
+opengl install and running (optional)
+libfreenect
+webcam (running, for tests with opencv-functions(optional))
+
+compile: on console:
+--------------------
+g++ -fPIC -g -Wall -I/usr/local/include/opencv -L /usr/local/lib -lcxcore -lcv -lhighgui -lcvaux -lml -o PROG-NAME PROG-NAME.cpp -lfreenect -lm 
+
+run as: ./PROG-NAME
+
+PROG-NAME name of the source-code-file
